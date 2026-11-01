@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
-        <module name="ApiGateway" />
         <module name="discovery-server" />
+        <module name="service-alpha" />
+        <module name="ApiGateway" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +18,7 @@
       <module name="ApiGateway" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
+      <module name="service-alpha" options="-parameters" />
     </option>
   </component>
 </project>
