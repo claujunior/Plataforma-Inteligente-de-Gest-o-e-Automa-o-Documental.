@@ -116,3 +116,67 @@
 2026-11-03T08:17:37.615-03:00  INFO 11384 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - Re-registering apps/SERVICE-ALPHA
 2026-11-03T08:17:37.618-03:00  INFO 11384 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
 2026-11-03T08:17:37.629-03:00  INFO 11384 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:18:30.009-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-03T08:18:32.261-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=service-alpha, profiles=[default], label=null, version=068ea86870cb84888e39f7a5e39bb0e7f9899ac9, state=
+2026-11-03T08:18:32.685-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-11-03T08:18:35.702-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-11-03T08:18:35.731-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - deregister  status: 200
+2026-11-03T08:18:35.734-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-11-03T08:18:35.738-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-11-03T08:18:35.745-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-11-03T08:18:35.749-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-03T08:18:35.751-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-03T08:18:35.752-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-03T08:18:35.753-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-03T08:18:35.756-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-03T08:18:35.757-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-03T08:18:35.758-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-11-03T08:18:35.759-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-03T08:18:35.837-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-03T08:18:35.842-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-11-03T08:18:35.844-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-03T08:18:35.846-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1793704715846 with initial instances count: 5
+2026-11-03T08:18:35.849-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-ALPHA with eureka with status DOWN
+2026-11-03T08:18:35.851-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793704715851, current=DOWN, previous=STARTING]
+2026-11-03T08:18:35.853-03:00  INFO 11384 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:18:35.853-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-ALPHA with eureka with status UP
+2026-11-03T08:18:35.857-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793704715857, current=UP, previous=DOWN]
+2026-11-03T08:18:35.860-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-1] o.s.cloud.endpoint.RefreshEndpoint       : Refreshed keys : [config.client.version, message]
+2026-11-03T08:18:35.906-03:00  INFO 11384 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:18:35.907-03:00  INFO 11384 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:18:35.929-03:00  INFO 11384 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:19:05.912-03:00  INFO 11384 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - Re-registering apps/SERVICE-ALPHA
+2026-11-03T08:19:05.914-03:00  INFO 11384 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:19:05.926-03:00  INFO 11384 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:21:20.681-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-03T08:21:22.153-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=service-alpha, profiles=[default], label=null, version=7740a2a797d7a15e4ff50aafbb4e6ad14d483238, state=
+2026-11-03T08:21:22.243-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2026-11-03T08:21:25.247-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2026-11-03T08:21:25.270-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - deregister  status: 200
+2026-11-03T08:21:25.272-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2026-11-03T08:21:25.273-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-11-03T08:21:25.275-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-11-03T08:21:25.276-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-03T08:21:25.278-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-03T08:21:25.279-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-03T08:21:25.280-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-03T08:21:25.281-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-03T08:21:25.281-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-03T08:21:25.282-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-11-03T08:21:25.282-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-03T08:21:25.311-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-03T08:21:25.313-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-11-03T08:21:25.314-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-03T08:21:25.315-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1793704885315 with initial instances count: 5
+2026-11-03T08:21:25.317-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-ALPHA with eureka with status DOWN
+2026-11-03T08:21:25.318-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793704885318, current=DOWN, previous=STARTING]
+2026-11-03T08:21:25.319-03:00  INFO 11384 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:21:25.320-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-ALPHA with eureka with status UP
+2026-11-03T08:21:25.321-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793704885321, current=UP, previous=DOWN]
+2026-11-03T08:21:25.321-03:00  INFO 11384 --- [service-alpha] [nio-8090-exec-8] o.s.cloud.endpoint.RefreshEndpoint       : Refreshed keys : [config.client.version, message]
+2026-11-03T08:21:25.338-03:00  INFO 11384 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:21:25.340-03:00  INFO 11384 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:21:25.350-03:00  INFO 11384 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:21:55.351-03:00  INFO 11384 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - Re-registering apps/SERVICE-ALPHA
+2026-11-03T08:21:55.352-03:00  INFO 11384 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:21:55.359-03:00  INFO 11384 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204

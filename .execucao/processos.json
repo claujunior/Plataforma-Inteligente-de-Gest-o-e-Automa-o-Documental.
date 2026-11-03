@@ -1,50 +1,50 @@
 ﻿[
     {
         "Nome":  "Config Server",
-        "Pid":  6852,
-        "InicioUtc":  "2026-11-03T11:13:31.5976614Z",
+        "Pid":  41656,
+        "InicioUtc":  "2026-11-03T11:34:56.9698181Z",
         "Porta":  8888,
-        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\config-server.stdout.log",
-        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\config-server.stderr.log"
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\config-server.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\config-server.stderr.log"
     },
     {
         "Nome":  "Eureka 1",
-        "Pid":  32252,
-        "InicioUtc":  "2026-11-03T11:13:45.5667809Z",
+        "Pid":  32332,
+        "InicioUtc":  "2026-11-03T11:35:10.7061471Z",
         "Porta":  8761,
-        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\discovery-server-server1.stdout.log",
-        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\discovery-server-server1.stderr.log"
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\discovery-server-server1.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\discovery-server-server1.stderr.log"
     },
     {
         "Nome":  "Eureka 2",
-        "Pid":  21284,
-        "InicioUtc":  "2026-11-03T11:13:46.1207812Z",
+        "Pid":  15844,
+        "InicioUtc":  "2026-11-03T11:35:11.2454864Z",
         "Porta":  8762,
-        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\discovery-server-server2.stdout.log",
-        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\discovery-server-server2.stderr.log"
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\discovery-server-server2.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\discovery-server-server2.stderr.log"
     },
     {
         "Nome":  "Eureka 3",
-        "Pid":  40892,
-        "InicioUtc":  "2026-11-03T11:13:46.7054915Z",
+        "Pid":  43736,
+        "InicioUtc":  "2026-11-03T11:35:11.7991848Z",
         "Porta":  8763,
-        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\discovery-server-server3.stdout.log",
-        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\discovery-server-server3.stderr.log"
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\discovery-server-server3.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\discovery-server-server3.stderr.log"
     },
     {
         "Nome":  "Service Alpha",
-        "Pid":  11384,
-        "InicioUtc":  "2026-11-03T11:14:05.5782331Z",
+        "Pid":  36240,
+        "InicioUtc":  "2026-11-03T11:35:29.5165808Z",
         "Porta":  8090,
-        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\service-alpha.stdout.log",
-        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\service-alpha.stderr.log"
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\service-alpha.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\service-alpha.stderr.log"
     },
     {
         "Nome":  "API Gateway",
-        "Pid":  43400,
-        "InicioUtc":  "2026-11-03T11:14:15.5197630Z",
+        "Pid":  12972,
+        "InicioUtc":  "2026-11-03T11:35:39.3682438Z",
         "Porta":  8080,
-        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\ApiGateway.stdout.log",
-        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-081253-011\\ApiGateway.stderr.log"
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\ApiGateway.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-083419-986\\ApiGateway.stderr.log"
     }
 ]

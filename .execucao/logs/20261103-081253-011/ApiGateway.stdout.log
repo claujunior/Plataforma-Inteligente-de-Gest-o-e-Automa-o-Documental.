@@ -64,3 +64,4 @@
 2026-11-03T08:14:57.128-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
 2026-11-03T08:14:57.129-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
 2026-11-03T08:14:57.180-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-03T08:19:26.581-03:00  INFO 43400 --- [ApiGateway] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

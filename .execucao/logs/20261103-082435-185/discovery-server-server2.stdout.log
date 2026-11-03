@@ -1,0 +1,309 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-03T08:25:33.802-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] u.b.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication v0.0.1-SNAPSHOT using Java 21.0.12.1 with PID 39364 (C:\Users\claud\Downloads\distribuidos3\discovery-server\target\discovery-server-0.0.1-SNAPSHOT.jar started by claud in C:\Users\claud\Downloads\distribuidos3\discovery-server)
+2026-11-03T08:25:33.814-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] u.b.d.DiscoveryServerApplication         : The following 1 profile is active: "server2"
+2026-11-03T08:25:33.912-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-03T08:25:33.913-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ClusterEurekaServer, profiles=[default], label=null, version=7740a2a797d7a15e4ff50aafbb4e6ad14d483238, state=
+2026-11-03T08:25:33.915-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-03T08:25:33.915-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ClusterEurekaServer, profiles=[server2], label=null, version=7740a2a797d7a15e4ff50aafbb4e6ad14d483238, state=
+2026-11-03T08:25:36.144-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5c4338e2-0a5b-31bf-bee3-44bbf2bd4e6c
+2026-11-03T08:25:37.009-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8762 (http)
+2026-11-03T08:25:37.039-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-03T08:25:37.040-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-03T08:25:37.112-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3191 ms
+2026-11-03T08:25:39.434-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-03T08:25:39.435-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-03T08:25:39.925-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-03T08:25:39.932-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-03T08:25:40.417-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-11-03T08:25:41.729-03:00  WARN 39364 --- [ClusterEurekaServer] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-11-03T08:25:41.764-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-11-03T08:25:41.802-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-11-03T08:25:41.847-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-03T08:25:41.849-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-03T08:25:41.849-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-03T08:25:41.850-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-03T08:25:41.874-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-03T08:25:41.898-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-03T08:25:41.899-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-03T08:25:41.900-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-03T08:25:41.900-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-03T08:25:41.901-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-03T08:25:41.902-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-11-03T08:25:41.903-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-03T08:25:42.030-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8763/eureka/}, exception=java.net.ConnectException: Connection refused: getsockopt
+
+jakarta.ws.rs.ProcessingException: java.net.ConnectException: Connection refused: getsockopt
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:278) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:301) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:671) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:706) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$0(JerseyInvocation.java:700) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:391) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:700) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:670) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:410) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:310) ~[jersey-client-4.0.3.jar!/:na]
+	at com.netflix.discovery.shared.transport.jersey3.AbstractJersey3EurekaHttpClient.getApplicationsInternal(AbstractJersey3EurekaHttpClient.java:266) ~[eureka-client-jersey3-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.jersey3.AbstractJersey3EurekaHttpClient.getApplications(AbstractJersey3EurekaHttpClient.java:213) ~[eureka-client-jersey3-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:70) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1061) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:976) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:419) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:254) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:249) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:68) ~[spring-cloud-netflix-eureka-client-5.0.3.jar!/:5.0.3]
+	at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:324) ~[spring-cloud-netflix-eureka-client-5.0.3.jar!/:5.0.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1190) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:372) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:381) ~[spring-cloud-context-5.0.4.jar!/:5.0.4]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:177) ~[spring-cloud-context-5.0.4.jar!/:5.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:369) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35) ~[spring-aop-7.0.10.jar!/:7.0.10]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:199) ~[spring-aop-7.0.10.jar!/:7.0.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy75.getApplications(Unknown Source) ~[na:na]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerAutoConfiguration.peerAwareInstanceRegistry(EurekaServerAutoConfiguration.java:207) ~[spring-cloud-netflix-eureka-server-5.0.3.jar!/:5.0.3]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:155) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:72) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:152) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1190) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:229) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1769) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1358) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1190) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1232) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1711) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1658) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:764) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:748) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1442) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1191) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.10.jar!/:7.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:994) ~[spring-context-7.0.10.jar!/:7.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.10.jar!/:7.0.10]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:131) ~[spring-boot-web-server-4.1.2.jar!/:4.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-4.1.2.jar!/:4.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:433) ~[spring-boot-4.1.2.jar!/:4.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309) ~[spring-boot-4.1.2.jar!/:4.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1353) ~[spring-boot-4.1.2.jar!/:4.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-4.1.2.jar!/:4.1.2]
+	at ufrn.bcc.discovery_server.DiscoveryServerApplication.main(DiscoveryServerApplication.java:12) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:94) ~[discovery-server-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:52) ~[discovery-server-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:28) ~[discovery-server-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:694) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:539) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:644) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:290) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:394) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:416) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1327) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1260) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1146) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1075) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1707) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1632) ~[na:na]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[na:na]
+	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:464) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:276) ~[jersey-client-4.0.3.jar!/:na]
+	... 114 common frames omitted
+
+2026-11-03T08:25:42.040-03:00  WARN 39364 --- [ClusterEurekaServer] [           main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: getsockopt
+2026-11-03T08:25:42.085-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution succeeded on retry #1
+2026-11-03T08:25:42.087-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-03T08:25:42.089-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-11-03T08:25:42.093-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-03T08:25:42.095-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1793705142094 with initial instances count: 0
+2026-11-03T08:25:42.142-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-11-03T08:25:42.144-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8763/eureka/, http://localhost:8761/eureka/]
+2026-11-03T08:25:42.348-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-03T08:25:42.357-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-03T08:25:42.358-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-03T08:25:42.359-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-03T08:25:42.405-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-03T08:25:42.407-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-03T08:25:42.407-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-03T08:25:42.408-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-03T08:25:42.414-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8763/eureka/
+2026-11-03T08:25:42.415-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-11-03T08:25:42.424-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-11-03T08:25:42.425-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-11-03T08:25:42.444-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-11-03T08:25:42.542-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLUSTEREUREKASERVER with eureka with status UP
+2026-11-03T08:25:42.545-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793705142545, current=UP, previous=STARTING]
+2026-11-03T08:25:42.550-03:00  INFO 39364 --- [ClusterEurekaServer] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLUSTEREUREKASERVER/ClusterEurekaServer:8762: registering service...
+2026-11-03T08:25:42.581-03:00  INFO 39364 --- [ClusterEurekaServer] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-11-03T08:25:42.584-03:00  INFO 39364 --- [ClusterEurekaServer] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-11-03T08:25:42.584-03:00  INFO 39364 --- [ClusterEurekaServer] [foReplicator-%d] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8763/eureka/}, exception=java.net.ConnectException: Connection refused: getsockopt
+
+jakarta.ws.rs.ProcessingException: java.net.ConnectException: Connection refused: getsockopt
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:278) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:301) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:671) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:706) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$0(JerseyInvocation.java:700) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:391) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:700) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:670) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:436) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:342) ~[jersey-client-4.0.3.jar!/:na]
+	at com.netflix.discovery.shared.transport.jersey3.AbstractJersey3EurekaHttpClient.register(AbstractJersey3EurekaHttpClient.java:99) ~[eureka-client-jersey3-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:70) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:120) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:76) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:843) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:125) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at com.netflix.discovery.InstanceInfoReplicator$2.run(InstanceInfoReplicator.java:105) ~[eureka-client-2.0.6.jar!/:2.0.6]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:694) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:539) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:644) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:290) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:394) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:416) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1327) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1260) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1146) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1075) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1707) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1632) ~[na:na]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[na:na]
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.handleException(HttpUrlConnector.java:638) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:461) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:276) ~[jersey-client-4.0.3.jar!/:na]
+	... 35 common frames omitted
+
+2026-11-03T08:25:42.586-03:00  WARN 39364 --- [ClusterEurekaServer] [foReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused: getsockopt
+2026-11-03T08:25:42.599-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8762 (http) with context path '/'
+2026-11-03T08:25:42.602-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2026-11-03T08:25:42.632-03:00  INFO 39364 --- [ClusterEurekaServer] [           main] u.b.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 14.616 seconds (process running for 16.009)
+2026-11-03T08:25:42.717-03:00  INFO 39364 --- [ClusterEurekaServer] [foReplicator-%d] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution succeeded on retry #1
+2026-11-03T08:25:42.718-03:00  INFO 39364 --- [ClusterEurekaServer] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLUSTEREUREKASERVER/ClusterEurekaServer:8762 - registration status: 204
+2026-11-03T08:25:42.917-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03T08:25:42.926-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-03T08:25:42.929-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-11-03T08:25:43.419-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8762 with status UP (replication=true)
+2026-11-03T08:25:44.034-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8763 with status UP (replication=false)
+2026-11-03T08:25:55.621-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-03T08:26:09.918-03:00  WARN 39364 --- [ClusterEurekaServer] [nio-8762-exec-7] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CLUSTEREUREKASERVER - ClusterEurekaServer:8761
+2026-11-03T08:26:09.920-03:00  WARN 39364 --- [ClusterEurekaServer] [nio-8762-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CLUSTEREUREKASERVER - ClusterEurekaServer:8761
+2026-11-03T08:26:10.490-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8761 with status UP (replication=false)
+2026-11-03T08:26:12.109-03:00  INFO 39364 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-03T08:26:12.120-03:00  INFO 39364 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-03T08:26:12.121-03:00  INFO 39364 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-03T08:26:12.123-03:00  INFO 39364 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-03T08:26:12.124-03:00  INFO 39364 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-03T08:26:12.127-03:00  INFO 39364 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-11-03T08:26:12.130-03:00  INFO 39364 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-03T08:26:12.204-03:00  INFO 39364 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-03T08:26:12.587-03:00  INFO 39364 --- [ClusterEurekaServer] [       Thread-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8762 with status UP (replication=true)
+2026-11-03T08:26:12.601-03:00  INFO 39364 --- [ClusterEurekaServer] [       Thread-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8763 with status UP (replication=true)
+2026-11-03T08:26:12.604-03:00  INFO 39364 --- [ClusterEurekaServer] [       Thread-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-03T08:26:12.607-03:00  INFO 39364 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 3 instances from neighboring DS node
+2026-11-03T08:26:12.611-03:00  INFO 39364 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 5
+2026-11-03T08:26:12.613-03:00  INFO 39364 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-11-03T08:26:12.620-03:00  INFO 39364 --- [ClusterEurekaServer] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-11-03T08:26:39.223-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAY/Juninho.mshome.net:ApiGateway:8080 with status UP (replication=true)
+2026-11-03T08:27:12.620-03:00  INFO 39364 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-03T08:27:16.213-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=false)
+2026-11-03T08:27:16.226-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=false)
+2026-11-03T08:27:16.647-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 (replication=true)
+2026-11-03T08:27:46.196-03:00  WARN 39364 --- [ClusterEurekaServer] [io-8762-exec-10] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SERVICE-ALPHA - Juninho.mshome.net:service-alpha:8090
+2026-11-03T08:27:46.197-03:00  WARN 39364 --- [ClusterEurekaServer] [io-8762-exec-10] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SERVICE-ALPHA - Juninho.mshome.net:service-alpha:8090
+2026-11-03T08:27:46.242-03:00  INFO 39364 --- [ClusterEurekaServer] [nio-8762-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=false)

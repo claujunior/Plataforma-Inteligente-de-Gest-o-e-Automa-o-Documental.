@@ -11,6 +11,9 @@ spring:
       port: 6379
 
   cloud:
+    circuitbreaker:
+      resilience4j:
+        disable-time-limiter: true
     loadbalancer:
       ribbon:
         enabled: false
@@ -18,6 +21,8 @@ spring:
     gateway:
       server:
         webflux:
+          httpclient:
+            response-timeout: 6s
           discovery:
             locator:
               enabled: true
