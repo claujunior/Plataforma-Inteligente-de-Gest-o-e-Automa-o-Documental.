@@ -1,0 +1,45 @@
+# Maven e Java
+target/
+*.class
+*.hprof
+*.jfr
+
+# Logs e estado dos scripts de execucao
+/.execucao/
+logs/
+*.log
+*.pid
+*.pid.lock
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse e Spring Tool Suite
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated/
+.springBeans
+.sts4-cache/
+
+# VS Code e arquivos temporarios do editor
+.vscode/
+*.swp
+*.swo
+*~
+
+# Variaveis de ambiente locais
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini

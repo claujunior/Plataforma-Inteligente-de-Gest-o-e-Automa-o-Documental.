@@ -63,3 +63,26 @@
 2026-11-03T08:55:08.238-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
 2026-11-03T08:55:08.239-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
 2026-11-03T08:55:08.251-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:56:09.013-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-7] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-03T08:56:11.494-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-7] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=service-alpha, profiles=[default], label=null, version=4536dc09f73261b9121c5a85b5d0ea8237a2939e, state=
+2026-11-03T08:56:11.618-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-ALPHA with eureka with status DOWN
+2026-11-03T08:56:11.626-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793706971626, current=DOWN, previous=UP]
+2026-11-03T08:56:11.627-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-7] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-ALPHA with eureka with status UP
+2026-11-03T08:56:11.627-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:56:11.628-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793706971628, current=UP, previous=DOWN]
+2026-11-03T08:56:11.629-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-7] o.s.cloud.endpoint.RefreshEndpoint       : Refreshed keys : [config.client.version, message]
+2026-11-03T08:56:11.649-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:56:11.650-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:56:11.662-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:56:15.572-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-8] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-03T08:56:16.716-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-8] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=service-alpha, profiles=[default], label=null, version=4536dc09f73261b9121c5a85b5d0ea8237a2939e, state=
+2026-11-03T08:56:16.856-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-8] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-ALPHA with eureka with status DOWN
+2026-11-03T08:56:16.864-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793706976864, current=DOWN, previous=UP]
+2026-11-03T08:56:16.865-03:00  WARN 40876 --- [service-alpha] [nio-8090-exec-8] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2026-11-03T08:56:16.866-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-8] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-ALPHA with eureka with status UP
+2026-11-03T08:56:16.867-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-8] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793706976867, current=UP, previous=DOWN]
+2026-11-03T08:56:16.868-03:00  WARN 40876 --- [service-alpha] [nio-8090-exec-8] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2026-11-03T08:56:16.869-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-8] o.s.cloud.endpoint.RefreshEndpoint       : Refreshed keys : []
+2026-11-03T08:56:19.142-03:00  INFO 40876 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - Re-registering apps/SERVICE-ALPHA
+2026-11-03T08:56:19.144-03:00  INFO 40876 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:56:19.156-03:00  INFO 40876 --- [service-alpha] [beatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204

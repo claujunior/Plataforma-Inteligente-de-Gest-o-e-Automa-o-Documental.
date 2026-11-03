@@ -91,3 +91,6 @@
 2026-11-03T08:54:37.584-03:00  INFO 38664 --- [ClusterEurekaServer] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
 2026-11-03T08:54:46.253-03:00  INFO 38664 --- [ClusterEurekaServer] [nio-8762-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAY/Juninho.mshome.net:ApiGateway:8080 with status UP (replication=false)
 2026-11-03T08:55:08.784-03:00  INFO 38664 --- [ClusterEurekaServer] [nio-8762-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-03T08:55:37.591-03:00  INFO 38664 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-03T08:56:12.189-03:00  INFO 38664 --- [ClusterEurekaServer] [nio-8762-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-03T08:56:19.626-03:00  INFO 38664 --- [ClusterEurekaServer] [nio-8762-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
