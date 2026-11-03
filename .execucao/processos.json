@@ -1,3 +1,50 @@
 ﻿[
-
+    {
+        "Nome":  "Config Server",
+        "Pid":  21092,
+        "InicioUtc":  "2026-11-03T11:05:01.9684447Z",
+        "Porta":  8888,
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\config-server.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\config-server.stderr.log"
+    },
+    {
+        "Nome":  "Eureka 1",
+        "Pid":  41432,
+        "InicioUtc":  "2026-11-03T11:05:15.9253995Z",
+        "Porta":  8761,
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\discovery-server-server1.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\discovery-server-server1.stderr.log"
+    },
+    {
+        "Nome":  "Eureka 2",
+        "Pid":  23376,
+        "InicioUtc":  "2026-11-03T11:05:16.4821076Z",
+        "Porta":  8762,
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\discovery-server-server2.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\discovery-server-server2.stderr.log"
+    },
+    {
+        "Nome":  "Eureka 3",
+        "Pid":  3036,
+        "InicioUtc":  "2026-11-03T11:05:17.0494470Z",
+        "Porta":  8763,
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\discovery-server-server3.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\discovery-server-server3.stderr.log"
+    },
+    {
+        "Nome":  "Service Alpha",
+        "Pid":  21292,
+        "InicioUtc":  "2026-11-03T11:05:35.6918014Z",
+        "Porta":  8090,
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\service-alpha.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\service-alpha.stderr.log"
+    },
+    {
+        "Nome":  "API Gateway",
+        "Pid":  41128,
+        "InicioUtc":  "2026-11-03T11:05:46.1216589Z",
+        "Porta":  8080,
+        "LogSaida":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\ApiGateway.stdout.log",
+        "LogErro":  "C:\\Users\\claud\\Downloads\\distribuidos3\\.execucao\\logs\\20261103-080424-589\\ApiGateway.stderr.log"
+    }
 ]
