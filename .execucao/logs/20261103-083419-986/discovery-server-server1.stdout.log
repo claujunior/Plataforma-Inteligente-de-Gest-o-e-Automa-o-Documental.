@@ -764,3 +764,60 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-11-03T08:35:56.470-03:00  INFO 32332 --- [ClusterEurekaServer] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLUSTEREUREKASERVER/ClusterEurekaServer:8761: registering service...
 2026-11-03T08:35:56.483-03:00  INFO 32332 --- [ClusterEurekaServer] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLUSTEREUREKASERVER/ClusterEurekaServer:8761 - registration status: 204
 2026-11-03T08:35:57.111-03:00  INFO 32332 --- [ClusterEurekaServer] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8761 with status UP (replication=true)
+2026-11-03T08:36:56.430-03:00  INFO 32332 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-03T08:37:45.930-03:00  INFO 32332 --- [ClusterEurekaServer] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 (replication=false)
+2026-11-03T08:37:46.485-03:00  INFO 32332 --- [ClusterEurekaServer] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-03T08:37:57.949-03:00  INFO 32332 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-03T08:38:16.559-03:00  INFO 32332 --- [ClusterEurekaServer] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-03T08:38:57.949-03:00  INFO 32332 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-03T08:39:04.913-03:00  INFO 32332 --- [ClusterEurekaServer] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 (replication=true)
+2026-11-03T08:39:04.914-03:00  INFO 32332 --- [ClusterEurekaServer] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-03T08:39:57.954-03:00  INFO 32332 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-11-03T08:40:27.161-03:00  INFO 32332 --- [ClusterEurekaServer] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-03T08:40:57.961-03:00  INFO 32332 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-11-03T08:49:09.894-03:00 ERROR 32332 --- [ClusterEurekaServer] [get_localhost-9] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+
+jakarta.ws.rs.ProcessingException: java.net.SocketTimeoutException: Read timed out
+	at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:535) ~[jersey-apache-connector-3.0.5.jar!/:na]
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:301) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:671) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:706) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$0(JerseyInvocation.java:700) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:391) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:700) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:670) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:436) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:342) ~[jersey-client-4.0.3.jar!/:na]
+	at com.netflix.eureka.transport.Jersey3ReplicationClient.submitBatchUpdates(Jersey3ReplicationClient.java:116) ~[eureka-core-jersey3-2.0.6.jar!/:2.0.6]
+	at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-2.0.6.jar!/:2.0.6]
+	at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:178) ~[eureka-core-2.0.6.jar!/:2.0.6]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[na:na]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:487) ~[jersey-apache-connector-3.0.5.jar!/:na]
+	... 16 common frames omitted
+
+2026-11-03T08:49:36.800-03:00  INFO 32332 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 458839ms

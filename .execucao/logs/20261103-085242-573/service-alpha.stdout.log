@@ -1,0 +1,65 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-03T08:54:13.190-03:00  INFO 40876 --- [service-alpha] [           main] u.b.s.ServiceAlphaApplication            : Starting ServiceAlphaApplication v0.0.1-SNAPSHOT using Java 21.0.12.1 with PID 40876 (C:\Users\claud\Downloads\distribuidos3\service-alpha\target\service-alpha-0.0.1-SNAPSHOT.jar started by claud in C:\Users\claud\Downloads\distribuidos3\service-alpha)
+2026-11-03T08:54:13.230-03:00  INFO 40876 --- [service-alpha] [           main] u.b.s.ServiceAlphaApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-11-03T08:54:13.328-03:00  INFO 40876 --- [service-alpha] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-03T08:54:13.330-03:00  INFO 40876 --- [service-alpha] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=service-alpha, profiles=[default], label=null, version=51bc6f99d6273569b96f94eee8ea2453cd7c62dc, state=
+2026-11-03T08:54:15.328-03:00  INFO 40876 --- [service-alpha] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fd320345-e97f-39af-9408-b2e693465f32
+2026-11-03T08:54:15.912-03:00  INFO 40876 --- [service-alpha] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8090 (http)
+2026-11-03T08:54:15.993-03:00  INFO 40876 --- [service-alpha] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-03T08:54:15.994-03:00  INFO 40876 --- [service-alpha] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-03T08:54:16.196-03:00  INFO 40876 --- [service-alpha] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2855 ms
+2026-11-03T08:54:17.987-03:00  INFO 40876 --- [service-alpha] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-11-03T08:54:18.078-03:00  INFO 40876 --- [service-alpha] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-11-03T08:54:18.187-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-11-03T08:54:18.226-03:00  INFO 40876 --- [service-alpha] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-03T08:54:18.246-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-03T08:54:18.247-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-03T08:54:18.248-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-03T08:54:18.248-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-03T08:54:18.249-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-03T08:54:18.249-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-11-03T08:54:18.250-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-03T08:54:18.963-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-03T08:54:18.966-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-11-03T08:54:18.969-03:00  INFO 40876 --- [service-alpha] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-03T08:54:18.971-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1793706858971 with initial instances count: 0
+2026-11-03T08:54:19.235-03:00  WARN 40876 --- [service-alpha] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-11-03T08:54:19.247-03:00  INFO 40876 --- [service-alpha] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-11-03T08:54:19.326-03:00  INFO 40876 --- [service-alpha] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-ALPHA with eureka with status UP
+2026-11-03T08:54:19.328-03:00  INFO 40876 --- [service-alpha] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793706859328, current=UP, previous=STARTING]
+2026-11-03T08:54:19.329-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:54:19.378-03:00  INFO 40876 --- [service-alpha] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8090 (http) with context path '/'
+2026-11-03T08:54:19.380-03:00  INFO 40876 --- [service-alpha] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8090
+2026-11-03T08:54:19.417-03:00  INFO 40876 --- [service-alpha] [           main] u.b.s.ServiceAlphaApplication            : Started ServiceAlphaApplication in 8.74 seconds (process running for 9.729)
+2026-11-03T08:54:19.443-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:54:21.818-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03T08:54:21.867-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-03T08:54:21.870-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-11-03T08:54:48.977-03:00  INFO 40876 --- [service-alpha] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-03T08:54:48.979-03:00  INFO 40876 --- [service-alpha] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-03T08:54:48.979-03:00  INFO 40876 --- [service-alpha] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-03T08:54:48.980-03:00  INFO 40876 --- [service-alpha] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-03T08:54:48.981-03:00  INFO 40876 --- [service-alpha] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-03T08:54:48.982-03:00  INFO 40876 --- [service-alpha] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-11-03T08:54:48.983-03:00  INFO 40876 --- [service-alpha] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-03T08:54:49.041-03:00  INFO 40876 --- [service-alpha] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-03T08:55:06.679-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-5] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-03T08:55:07.957-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-5] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=service-alpha, profiles=[default], label=null, version=51bc6f99d6273569b96f94eee8ea2453cd7c62dc, state=
+2026-11-03T08:55:08.200-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-5] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application SERVICE-ALPHA with eureka with status DOWN
+2026-11-03T08:55:08.208-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-5] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793706908208, current=DOWN, previous=UP]
+2026-11-03T08:55:08.209-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-5] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-ALPHA with eureka with status UP
+2026-11-03T08:55:08.210-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:55:08.211-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-5] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793706908211, current=UP, previous=DOWN]
+2026-11-03T08:55:08.212-03:00  INFO 40876 --- [service-alpha] [nio-8090-exec-5] o.s.cloud.endpoint.RefreshEndpoint       : Refreshed keys : []
+2026-11-03T08:55:08.238-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
+2026-11-03T08:55:08.239-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090: registering service...
+2026-11-03T08:55:08.251-03:00  INFO 40876 --- [service-alpha] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 - registration status: 204
