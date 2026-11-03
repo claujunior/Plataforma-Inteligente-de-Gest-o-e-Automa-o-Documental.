@@ -56,3 +56,4 @@
 2026-11-03T08:06:01.121-03:00  INFO 41128 --- [ApiGateway] [           main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8080 (http)
 2026-11-03T08:06:01.123-03:00  INFO 41128 --- [ApiGateway] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
 2026-11-03T08:06:01.200-03:00  INFO 41128 --- [ApiGateway] [           main] u.bcc.ApiGateway.ApiGatewayApplication   : Started ApiGatewayApplication in 13.816 seconds (process running for 14.965)
+2026-11-03T08:10:59.744-03:00  INFO 41128 --- [ApiGateway] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

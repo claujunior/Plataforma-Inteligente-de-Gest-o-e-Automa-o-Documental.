@@ -1,0 +1,100 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-03T08:05:25.045-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] u.b.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication v0.0.1-SNAPSHOT using Java 21.0.12.1 with PID 23376 (C:\Users\claud\Downloads\distribuidos3\discovery-server\target\discovery-server-0.0.1-SNAPSHOT.jar started by claud in C:\Users\claud\Downloads\distribuidos3\discovery-server)
+2026-11-03T08:05:25.052-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] u.b.d.DiscoveryServerApplication         : The following 1 profile is active: "server2"
+2026-11-03T08:05:25.171-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-03T08:05:25.173-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ClusterEurekaServer, profiles=[default], label=null, version=e299cfd469e19f0d6e6f5603befcccc2545dca26, state=
+2026-11-03T08:05:25.174-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-03T08:05:25.175-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ClusterEurekaServer, profiles=[server2], label=null, version=e299cfd469e19f0d6e6f5603befcccc2545dca26, state=
+2026-11-03T08:05:27.389-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5c4338e2-0a5b-31bf-bee3-44bbf2bd4e6c
+2026-11-03T08:05:28.198-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8762 (http)
+2026-11-03T08:05:28.234-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-03T08:05:28.236-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-03T08:05:28.312-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3132 ms
+2026-11-03T08:05:30.751-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-03T08:05:30.752-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-03T08:05:31.178-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-03T08:05:31.181-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-03T08:05:31.640-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-11-03T08:05:33.039-03:00  WARN 23376 --- [ClusterEurekaServer] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-11-03T08:05:33.095-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-11-03T08:05:33.149-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-11-03T08:05:33.173-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-03T08:05:33.174-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-03T08:05:33.175-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-03T08:05:33.175-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-03T08:05:33.195-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-03T08:05:33.206-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-03T08:05:33.207-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-03T08:05:33.207-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-03T08:05:33.208-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-03T08:05:33.208-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-03T08:05:33.208-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-11-03T08:05:33.208-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-03T08:05:33.370-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-03T08:05:33.373-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-11-03T08:05:33.375-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-03T08:05:33.377-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1793703933376 with initial instances count: 0
+2026-11-03T08:05:33.428-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-11-03T08:05:33.431-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8763/eureka/, http://localhost:8761/eureka/]
+2026-11-03T08:05:33.650-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-03T08:05:33.658-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-03T08:05:33.659-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-03T08:05:33.659-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-03T08:05:33.715-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-03T08:05:33.716-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-03T08:05:33.717-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-03T08:05:33.718-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-03T08:05:33.726-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8763/eureka/
+2026-11-03T08:05:33.727-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-11-03T08:05:33.737-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-11-03T08:05:33.738-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-11-03T08:05:33.758-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-11-03T08:05:33.851-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLUSTEREUREKASERVER with eureka with status UP
+2026-11-03T08:05:33.855-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793703933854, current=UP, previous=STARTING]
+2026-11-03T08:05:33.858-03:00  INFO 23376 --- [ClusterEurekaServer] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLUSTEREUREKASERVER/ClusterEurekaServer:8762: registering service...
+2026-11-03T08:05:33.880-03:00  INFO 23376 --- [ClusterEurekaServer] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-11-03T08:05:33.881-03:00  INFO 23376 --- [ClusterEurekaServer] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-11-03T08:05:33.901-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8762 (http) with context path '/'
+2026-11-03T08:05:33.903-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2026-11-03T08:05:33.932-03:00  INFO 23376 --- [ClusterEurekaServer] [           main] u.b.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 15.904 seconds (process running for 17.374)
+2026-11-03T08:05:34.017-03:00  INFO 23376 --- [ClusterEurekaServer] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLUSTEREUREKASERVER/ClusterEurekaServer:8762 - registration status: 204
+2026-11-03T08:05:34.209-03:00  INFO 23376 --- [ClusterEurekaServer] [nio-8762-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-03T08:05:34.210-03:00  INFO 23376 --- [ClusterEurekaServer] [nio-8762-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-03T08:05:34.212-03:00  INFO 23376 --- [ClusterEurekaServer] [nio-8762-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-11-03T08:05:34.681-03:00  INFO 23376 --- [ClusterEurekaServer] [nio-8762-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8762 with status UP (replication=true)
+2026-11-03T08:05:34.847-03:00  INFO 23376 --- [ClusterEurekaServer] [nio-8762-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8763 with status UP (replication=false)
+2026-11-03T08:05:44.912-03:00  INFO 23376 --- [ClusterEurekaServer] [nio-8762-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=false)
+2026-11-03T08:06:01.295-03:00  INFO 23376 --- [ClusterEurekaServer] [nio-8762-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAY/Juninho.mshome.net:ApiGateway:8080 with status UP (replication=true)
+2026-11-03T08:06:01.427-03:00  WARN 23376 --- [ClusterEurekaServer] [nio-8762-exec-2] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CLUSTEREUREKASERVER - ClusterEurekaServer:8761
+2026-11-03T08:06:01.430-03:00  WARN 23376 --- [ClusterEurekaServer] [nio-8762-exec-2] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CLUSTEREUREKASERVER - ClusterEurekaServer:8761
+2026-11-03T08:06:02.539-03:00  INFO 23376 --- [ClusterEurekaServer] [nio-8762-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8761 with status UP (replication=true)
+2026-11-03T08:06:03.385-03:00  INFO 23376 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-03T08:06:03.386-03:00  INFO 23376 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-03T08:06:03.387-03:00  INFO 23376 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-03T08:06:03.388-03:00  INFO 23376 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-03T08:06:03.389-03:00  INFO 23376 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-03T08:06:03.389-03:00  INFO 23376 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-11-03T08:06:03.390-03:00  INFO 23376 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-03T08:06:03.404-03:00  INFO 23376 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-03T08:06:03.885-03:00  INFO 23376 --- [ClusterEurekaServer] [       Thread-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8762 with status UP (replication=true)
+2026-11-03T08:06:03.925-03:00  INFO 23376 --- [ClusterEurekaServer] [       Thread-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8763 with status UP (replication=true)
+2026-11-03T08:06:03.927-03:00  INFO 23376 --- [ClusterEurekaServer] [       Thread-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-03T08:06:03.928-03:00  INFO 23376 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 3 instances from neighboring DS node
+2026-11-03T08:06:03.929-03:00  INFO 23376 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 5
+2026-11-03T08:06:03.931-03:00  INFO 23376 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-11-03T08:06:03.935-03:00  INFO 23376 --- [ClusterEurekaServer] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-11-03T08:07:03.935-03:00  INFO 23376 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-03T08:08:03.946-03:00  INFO 23376 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2026-11-03T08:09:03.952-03:00  INFO 23376 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-11-03T08:10:03.957-03:00  INFO 23376 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-11-03T08:10:33.228-03:00  INFO 23376 --- [ClusterEurekaServer] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-03T08:11:03.973-03:00  INFO 23376 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms

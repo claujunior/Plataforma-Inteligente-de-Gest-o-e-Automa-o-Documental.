@@ -853,3 +853,9 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 2026-11-03T08:06:01.891-03:00  INFO 41432 --- [ClusterEurekaServer] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLUSTEREUREKASERVER/ClusterEurekaServer:8761: registering service...
 2026-11-03T08:06:01.912-03:00  INFO 41432 --- [ClusterEurekaServer] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLUSTEREUREKASERVER/ClusterEurekaServer:8761 - registration status: 204
 2026-11-03T08:06:02.540-03:00  INFO 41432 --- [ClusterEurekaServer] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8761 with status UP (replication=true)
+2026-11-03T08:07:01.853-03:00  INFO 41432 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-03T08:08:01.856-03:00  INFO 41432 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-11-03T08:09:01.861-03:00  INFO 41432 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-11-03T08:10:01.864-03:00  INFO 41432 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-11-03T08:10:30.977-03:00  INFO 41432 --- [ClusterEurekaServer] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-03T08:11:01.874-03:00  INFO 41432 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
