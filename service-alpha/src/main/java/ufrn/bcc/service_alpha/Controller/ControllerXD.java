@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("teste")
-public class controllerXD {
+public class ControllerXD {
 
     @Value("${message}")
     private String message;
