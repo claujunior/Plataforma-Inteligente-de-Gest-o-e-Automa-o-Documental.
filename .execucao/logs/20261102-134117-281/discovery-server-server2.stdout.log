@@ -1,0 +1,210 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-02T13:41:57.878-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] u.b.d.DiscoveryServerApplication         : Starting DiscoveryServerApplication v0.0.1-SNAPSHOT using Java 21.0.12.1 with PID 29056 (C:\Users\claud\Downloads\distribuidos3\discovery-server\target\discovery-server-0.0.1-SNAPSHOT.jar started by claud in C:\Users\claud\Downloads\distribuidos3\discovery-server)
+2026-11-02T13:41:57.886-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] u.b.d.DiscoveryServerApplication         : The following 1 profile is active: "server2"
+2026-11-02T13:41:57.958-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-02T13:41:57.959-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ClusterEurekaServer, profiles=[default], label=null, version=773631a6afd46845a7453251fae81b8dbb649e68, state=
+2026-11-02T13:41:57.961-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-02T13:41:57.961-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ClusterEurekaServer, profiles=[server2], label=null, version=773631a6afd46845a7453251fae81b8dbb649e68, state=
+2026-11-02T13:41:59.725-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5c4338e2-0a5b-31bf-bee3-44bbf2bd4e6c
+2026-11-02T13:42:00.394-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8762 (http)
+2026-11-02T13:42:00.425-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-02T13:42:00.427-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-02T13:42:00.486-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2517 ms
+2026-11-02T13:42:02.171-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-02T13:42:02.172-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-02T13:42:02.492-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-02T13:42:02.493-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-02T13:42:02.693-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-11-02T13:42:03.481-03:00  WARN 29056 --- [ClusterEurekaServer] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-11-02T13:42:03.511-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-11-02T13:42:03.560-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-11-02T13:42:03.580-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-02T13:42:03.581-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-02T13:42:03.582-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-02T13:42:03.582-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-02T13:42:03.601-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-02T13:42:03.612-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-02T13:42:03.612-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-02T13:42:03.613-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-02T13:42:03.613-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-02T13:42:03.614-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-02T13:42:03.614-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-11-02T13:42:03.615-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-02T13:42:03.821-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-02T13:42:03.823-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-11-02T13:42:03.825-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-02T13:42:03.825-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1793637723825 with initial instances count: 0
+2026-11-02T13:42:03.854-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-11-02T13:42:03.855-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8763/eureka/, http://localhost:8761/eureka/]
+2026-11-02T13:42:03.953-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-02T13:42:03.955-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-02T13:42:03.955-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-02T13:42:03.955-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-02T13:42:03.989-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-11-02T13:42:03.990-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-11-02T13:42:03.990-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-11-02T13:42:03.990-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-11-02T13:42:03.996-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8763/eureka/
+2026-11-02T13:42:03.996-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-11-02T13:42:04.002-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-11-02T13:42:04.002-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-11-02T13:42:04.013-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-11-02T13:42:04.073-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application CLUSTEREUREKASERVER with eureka with status UP
+2026-11-02T13:42:04.075-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793637724075, current=UP, previous=STARTING]
+2026-11-02T13:42:04.077-03:00  INFO 29056 --- [ClusterEurekaServer] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLUSTEREUREKASERVER/ClusterEurekaServer:8762: registering service...
+2026-11-02T13:42:04.097-03:00  INFO 29056 --- [ClusterEurekaServer] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-11-02T13:42:04.098-03:00  INFO 29056 --- [ClusterEurekaServer] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-11-02T13:42:04.109-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8762 (http) with context path '/'
+2026-11-02T13:42:04.110-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8762
+2026-11-02T13:42:04.124-03:00  INFO 29056 --- [ClusterEurekaServer] [           main] u.b.d.DiscoveryServerApplication         : Started DiscoveryServerApplication in 11.912 seconds (process running for 12.753)
+2026-11-02T13:42:04.170-03:00  INFO 29056 --- [ClusterEurekaServer] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CLUSTEREUREKASERVER/ClusterEurekaServer:8762 - registration status: 204
+2026-11-02T13:42:04.274-03:00  INFO 29056 --- [ClusterEurekaServer] [nio-8762-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-02T13:42:04.275-03:00  INFO 29056 --- [ClusterEurekaServer] [nio-8762-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-02T13:42:04.277-03:00  INFO 29056 --- [ClusterEurekaServer] [nio-8762-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-11-02T13:42:04.348-03:00  INFO 29056 --- [ClusterEurekaServer] [nio-8762-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8763 with status UP (replication=true)
+2026-11-02T13:42:04.738-03:00  INFO 29056 --- [ClusterEurekaServer] [nio-8762-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8762 with status UP (replication=true)
+2026-11-02T13:42:10.122-03:00  INFO 29056 --- [ClusterEurekaServer] [nio-8762-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-02T13:42:18.652-03:00  INFO 29056 --- [ClusterEurekaServer] [nio-8762-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAY/Juninho.mshome.net:ApiGateway:8080 with status UP (replication=false)
+2026-11-02T13:42:31.808-03:00  WARN 29056 --- [ClusterEurekaServer] [nio-8762-exec-7] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: CLUSTEREUREKASERVER - ClusterEurekaServer:8761
+2026-11-02T13:42:31.808-03:00  WARN 29056 --- [ClusterEurekaServer] [nio-8762-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Renew): CLUSTEREUREKASERVER - ClusterEurekaServer:8761
+2026-11-02T13:42:32.732-03:00  INFO 29056 --- [ClusterEurekaServer] [nio-8762-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8761 with status UP (replication=true)
+2026-11-02T13:42:33.832-03:00  INFO 29056 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-02T13:42:33.833-03:00  INFO 29056 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-02T13:42:33.834-03:00  INFO 29056 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-02T13:42:33.834-03:00  INFO 29056 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-02T13:42:33.835-03:00  INFO 29056 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-02T13:42:33.835-03:00  INFO 29056 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-11-02T13:42:33.836-03:00  INFO 29056 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-02T13:42:33.846-03:00  INFO 29056 --- [ClusterEurekaServer] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-02T13:42:34.100-03:00  INFO 29056 --- [ClusterEurekaServer] [       Thread-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8763 with status UP (replication=true)
+2026-11-02T13:42:34.102-03:00  INFO 29056 --- [ClusterEurekaServer] [       Thread-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance CLUSTEREUREKASERVER/ClusterEurekaServer:8762 with status UP (replication=true)
+2026-11-02T13:42:34.102-03:00  INFO 29056 --- [ClusterEurekaServer] [       Thread-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-02T13:42:34.103-03:00  INFO 29056 --- [ClusterEurekaServer] [       Thread-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance APIGATEWAY/Juninho.mshome.net:ApiGateway:8080 with status UP (replication=true)
+2026-11-02T13:42:34.104-03:00  INFO 29056 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 4 instances from neighboring DS node
+2026-11-02T13:42:34.104-03:00  INFO 29056 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 6
+2026-11-02T13:42:34.104-03:00  INFO 29056 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-11-02T13:42:34.105-03:00  INFO 29056 --- [ClusterEurekaServer] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-11-02T13:43:34.106-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-02T13:44:34.109-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-11-02T13:45:34.111-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-11-02T13:46:34.124-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2026-11-02T13:47:03.633-03:00  INFO 29056 --- [ClusterEurekaServer] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-02T13:47:34.124-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-02T13:48:34.130-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-11-02T13:49:34.130-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-02T13:50:34.140-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2026-11-02T13:51:34.146-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 5ms
+2026-11-02T13:52:03.644-03:00  INFO 29056 --- [ClusterEurekaServer] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-02T13:52:34.156-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2026-11-02T13:53:34.163-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-11-02T13:54:34.175-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2026-11-02T13:55:34.185-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 9ms
+2026-11-02T13:56:34.189-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 4ms
+2026-11-02T13:57:03.647-03:00  INFO 29056 --- [ClusterEurekaServer] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-02T13:57:04.007-03:00  INFO 29056 --- [ClusterEurekaServer] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
+2026-11-02T13:57:34.200-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2026-11-02T13:58:34.207-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2026-11-02T13:59:34.210-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms
+2026-11-02T14:00:34.213-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 3ms
+2026-11-02T14:01:34.226-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2026-11-02T14:01:51.229-03:00 ERROR 29056 --- [ClusterEurekaServer] [get_localhost-7] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+
+jakarta.ws.rs.ProcessingException: java.net.SocketTimeoutException: Read timed out
+	at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:535) ~[jersey-apache-connector-3.0.5.jar!/:na]
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:301) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:671) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:706) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$0(JerseyInvocation.java:700) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:391) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:700) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:670) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:436) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:342) ~[jersey-client-4.0.3.jar!/:na]
+	at com.netflix.eureka.transport.Jersey3ReplicationClient.submitBatchUpdates(Jersey3ReplicationClient.java:116) ~[eureka-core-jersey3-2.0.6.jar!/:2.0.6]
+	at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-2.0.6.jar!/:2.0.6]
+	at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:178) ~[eureka-core-2.0.6.jar!/:2.0.6]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[na:na]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:487) ~[jersey-apache-connector-3.0.5.jar!/:na]
+	... 16 common frames omitted
+
+2026-11-02T14:01:51.228-03:00 ERROR 29056 --- [ClusterEurekaServer] [et_localhost-13] c.n.e.cluster.ReplicationTaskProcessor   : It seems to be a socket read timeout exception, it will retry later. if it continues to happen and some eureka node occupied all the cpu time, you should set property 'eureka.server.peer-node-read-timeout-ms' to a bigger value
+
+jakarta.ws.rs.ProcessingException: java.net.SocketTimeoutException: Read timed out
+	at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:535) ~[jersey-apache-connector-3.0.5.jar!/:na]
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:301) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:671) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:706) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$0(JerseyInvocation.java:700) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:391) ~[jersey-common-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:700) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:670) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:436) ~[jersey-client-4.0.3.jar!/:na]
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.post(JerseyInvocation.java:342) ~[jersey-client-4.0.3.jar!/:na]
+	at com.netflix.eureka.transport.Jersey3ReplicationClient.submitBatchUpdates(Jersey3ReplicationClient.java:116) ~[eureka-core-jersey3-2.0.6.jar!/:2.0.6]
+	at com.netflix.eureka.cluster.ReplicationTaskProcessor.process(ReplicationTaskProcessor.java:80) ~[eureka-core-2.0.6.jar!/:2.0.6]
+	at com.netflix.eureka.util.batcher.TaskExecutors$BatchWorkerRunnable.run(TaskExecutors.java:178) ~[eureka-core-2.0.6.jar!/:2.0.6]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[na:na]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[na:na]
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.16.jar!/:4.4.16]
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72) ~[httpclient-4.5.3.jar!/:4.5.3]
+	at org.glassfish.jersey.apache.connector.ApacheConnector.apply(ApacheConnector.java:487) ~[jersey-apache-connector-3.0.5.jar!/:na]
+	... 16 common frames omitted
+
+2026-11-02T14:02:03.655-03:00  INFO 29056 --- [ClusterEurekaServer] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-02T14:02:34.229-03:00  INFO 29056 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 2ms

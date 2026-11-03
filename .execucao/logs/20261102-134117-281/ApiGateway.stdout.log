@@ -1,0 +1,141 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-11-02T13:42:14.170-03:00  INFO 19056 --- [ApiGateway] [           main] u.bcc.ApiGateway.ApiGatewayApplication   : Starting ApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.12.1 with PID 19056 (C:\Users\claud\Downloads\distribuidos3\ApiGateway\target\ApiGateway-0.0.1-SNAPSHOT.jar started by claud in C:\Users\claud\Downloads\distribuidos3\ApiGateway)
+2026-11-02T13:42:14.175-03:00  INFO 19056 --- [ApiGateway] [           main] u.bcc.ApiGateway.ApiGatewayApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-11-02T13:42:14.252-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-11-02T13:42:14.252-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ApiGateway, profiles=[default], label=null, version=773631a6afd46845a7453251fae81b8dbb649e68, state=
+2026-11-02T13:42:15.496-03:00  INFO 19056 --- [ApiGateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-02T13:42:15.500-03:00  INFO 19056 --- [ApiGateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-11-02T13:42:15.528-03:00  INFO 19056 --- [ApiGateway] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2026-11-02T13:42:16.041-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f837061e-b3b8-3390-9e3b-da5638b48048
+2026-11-02T13:42:17.371-03:00  WARN 19056 --- [ApiGateway] [           main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: routes
+2026-11-02T13:42:17.645-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-11-02T13:42:17.647-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-11-02T13:42:17.647-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-11-02T13:42:17.648-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-11-02T13:42:17.648-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-11-02T13:42:17.648-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-11-02T13:42:17.649-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-11-02T13:42:17.649-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-11-02T13:42:17.650-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-11-02T13:42:17.650-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-11-02T13:42:17.650-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-02T13:42:17.651-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Version]
+2026-11-02T13:42:17.651-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-02T13:42:17.651-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-11-02T13:42:17.651-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-02T13:42:17.914-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-11-02T13:42:18.221-03:00  INFO 19056 --- [ApiGateway] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-11-02T13:42:18.256-03:00  WARN 19056 --- [ApiGateway] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-11-02T13:42:18.313-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-11-02T13:42:18.335-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-11-02T13:42:18.337-03:00  INFO 19056 --- [ApiGateway] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-02T13:42:18.344-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-02T13:42:18.344-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-02T13:42:18.344-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-02T13:42:18.344-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-02T13:42:18.345-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-02T13:42:18.345-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-11-02T13:42:18.345-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-02T13:42:18.602-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-11-02T13:42:18.609-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-11-02T13:42:18.610-03:00  INFO 19056 --- [ApiGateway] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-11-02T13:42:18.611-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1793637738611 with initial instances count: 1
+2026-11-02T13:42:18.613-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAY with eureka with status UP
+2026-11-02T13:42:18.614-03:00  INFO 19056 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793637738614, current=UP, previous=STARTING]
+2026-11-02T13:42:18.616-03:00  INFO 19056 --- [ApiGateway] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/Juninho.mshome.net:ApiGateway:8080: registering service...
+2026-11-02T13:42:18.656-03:00  INFO 19056 --- [ApiGateway] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/Juninho.mshome.net:ApiGateway:8080 - registration status: 204
+2026-11-02T13:42:18.802-03:00  INFO 19056 --- [ApiGateway] [           main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8080 (http)
+2026-11-02T13:42:18.804-03:00  INFO 19056 --- [ApiGateway] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-11-02T13:42:18.839-03:00  INFO 19056 --- [ApiGateway] [           main] u.bcc.ApiGateway.ApiGatewayApplication   : Started ApiGatewayApplication in 6.377 seconds (process running for 6.995)
+2026-11-02T13:47:18.353-03:00  INFO 19056 --- [ApiGateway] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-02T13:49:01.844-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/127.0.0.1:6379
+2026-11-02T13:49:01.859-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection closed prematurely
+
+io.lettuce.core.RedisConnectionException: Connection closed prematurely
+	at io.lettuce.core.protocol.RedisHandshakeHandler.channelInactive(RedisHandshakeHandler.java:76) ~[lettuce-core-7.5.2.RELEASE.jar!/:7.5.2.RELEASE/5728917]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:251) ~[netty-transport-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelInactive(ChannelInboundHandlerAdapter.java:81) ~[netty-transport-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.lettuce.core.ChannelGroupListener.channelInactive(ChannelGroupListener.java:54) ~[lettuce-core-7.5.2.RELEASE.jar!/:7.5.2.RELEASE/5728917]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelInactive(AbstractChannelHandlerContext.java:251) ~[netty-transport-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelInactive(DefaultChannelPipeline.java:1466) ~[netty-transport-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelInactive(DefaultChannelPipeline.java:918) ~[netty-transport-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$6.run(AbstractChannel.java:676) ~[netty-transport-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:148) ~[netty-common-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:141) ~[netty-common-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:535) ~[netty-common-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:228) ~[netty-transport-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1214) ~[netty-common-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.2.19.Final.jar!/:4.2.19.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.2.19.Final.jar!/:4.2.19.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-11-02T13:49:10.942-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-1] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:49:10.948-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:49:19.234-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:49:19.249-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:49:35.731-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:49:35.736-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:50:05.839-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-3] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:50:05.843-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:50:35.928-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:50:35.932-03:00  WARN 19056 --- [ApiGateway] [xecutorLoop-3-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:51:06.036-03:00  INFO 19056 --- [ApiGateway] [ecutorLoop-3-10] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:51:06.041-03:00  WARN 19056 --- [ApiGateway] [ecutorLoop-3-10] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:51:36.142-03:00  INFO 19056 --- [ApiGateway] [ecutorLoop-3-12] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:51:36.149-03:00  WARN 19056 --- [ApiGateway] [ecutorLoop-3-12] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:52:06.241-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:52:06.247-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-9] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:52:18.371-03:00  INFO 19056 --- [ApiGateway] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-02T13:52:36.333-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:52:36.340-03:00  WARN 19056 --- [ApiGateway] [oEventLoop-5-10] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:53:06.434-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:53:06.440-03:00  WARN 19056 --- [ApiGateway] [xecutorLoop-3-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:53:36.535-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:53:36.540-03:00  WARN 19056 --- [ApiGateway] [oEventLoop-5-12] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:54:06.640-03:00  INFO 19056 --- [ApiGateway] [ecutorLoop-3-10] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:54:06.644-03:00  WARN 19056 --- [ApiGateway] [ecutorLoop-3-10] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:54:36.734-03:00  INFO 19056 --- [ApiGateway] [ecutorLoop-3-12] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:54:36.738-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:55:06.835-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:55:06.840-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:55:36.944-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:55:36.946-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:56:07.038-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:56:07.043-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:56:37.147-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:56:37.153-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:57:07.241-03:00  INFO 19056 --- [ApiGateway] [ecutorLoop-3-10] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:57:07.246-03:00  WARN 19056 --- [ApiGateway] [ecutorLoop-3-10] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:57:18.374-03:00  INFO 19056 --- [ApiGateway] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-02T13:57:37.332-03:00  INFO 19056 --- [ApiGateway] [ecutorLoop-3-12] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:57:37.362-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-8] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:58:07.442-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:58:07.472-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-9] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:58:37.530-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:58:37.535-03:00  WARN 19056 --- [ApiGateway] [xecutorLoop-3-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:59:07.644-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:59:07.647-03:00  WARN 19056 --- [ApiGateway] [oEventLoop-5-11] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T13:59:37.744-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T13:59:37.751-03:00  WARN 19056 --- [ApiGateway] [oEventLoop-5-12] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T14:00:07.829-03:00  INFO 19056 --- [ApiGateway] [ecutorLoop-3-10] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T14:00:07.838-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-1] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T14:00:37.933-03:00  INFO 19056 --- [ApiGateway] [ecutorLoop-3-12] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T14:00:37.938-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-2] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T14:01:08.036-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-2] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T14:01:08.040-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-3] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T14:01:38.134-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-4] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T14:01:38.149-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-4] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T14:02:08.237-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-6] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T14:02:08.253-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-5] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379
+2026-11-02T14:02:18.393-03:00  INFO 19056 --- [ApiGateway] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-11-02T14:02:38.337-03:00  INFO 19056 --- [ApiGateway] [xecutorLoop-3-8] i.l.core.protocol.ConnectionWatchdog     : Reconnecting, last destination was localhost/<unresolved>:6379
+2026-11-02T14:02:38.358-03:00  WARN 19056 --- [ApiGateway] [ioEventLoop-5-6] i.l.core.protocol.ConnectionWatchdog     : Cannot reconnect to [localhost/<unresolved>:6379]: Connection refused: getsockopt: localhost/127.0.0.1:6379

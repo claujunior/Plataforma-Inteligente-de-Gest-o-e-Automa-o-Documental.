@@ -1,0 +1,63 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.2)
+
+2026-10-31T23:21:23.710-03:00  INFO 32680 --- [ApiGateway] [           main] u.bcc.ApiGateway.ApiGatewayApplication   : Starting ApiGatewayApplication v0.0.1-SNAPSHOT using Java 21.0.12.1 with PID 32680 (C:\Users\claud\Downloads\distribuidos3\ApiGateway\target\ApiGateway-0.0.1-SNAPSHOT.jar started by claud in C:\Users\claud\Downloads\distribuidos3\ApiGateway)
+2026-10-31T23:21:23.713-03:00  INFO 32680 --- [ApiGateway] [           main] u.bcc.ApiGateway.ApiGatewayApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-31T23:21:23.765-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2026-10-31T23:21:23.765-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=ApiGateway, profiles=[default], label=null, version=773631a6afd46845a7453251fae81b8dbb649e68, state=
+2026-10-31T23:21:24.840-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1a5fd113-33a1-3b2b-9bbe-7829927aeaa4
+2026-10-31T23:21:25.720-03:00  WARN 32680 --- [ApiGateway] [           main] o.h.v.i.m.a.CascadingMetaDataBuilder     : HV000271: Using `@Valid` on a container (java.util.List) is deprecated. You should apply the annotation on the type argument(s). Affected element: routes
+2026-10-31T23:21:25.859-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-10-31T23:21:25.860-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-10-31T23:21:25.860-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-10-31T23:21:25.860-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-10-31T23:21:25.861-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-10-31T23:21:25.861-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-10-31T23:21:25.861-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-10-31T23:21:25.861-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-10-31T23:21:25.862-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-10-31T23:21:25.862-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-10-31T23:21:25.862-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-10-31T23:21:25.862-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Version]
+2026-10-31T23:21:25.862-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-10-31T23:21:25.862-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-10-31T23:21:25.862-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-10-31T23:21:26.121-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-10-31T23:21:26.322-03:00  INFO 32680 --- [ApiGateway] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-10-31T23:21:26.359-03:00  WARN 32680 --- [ApiGateway] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-10-31T23:21:26.404-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-10-31T23:21:26.428-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-10-31T23:21:26.432-03:00  INFO 32680 --- [ApiGateway] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-10-31T23:21:26.447-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-10-31T23:21:26.447-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-10-31T23:21:26.448-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-10-31T23:21:26.449-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-10-31T23:21:26.449-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-10-31T23:21:26.449-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-10-31T23:21:26.449-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-10-31T23:21:26.767-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-10-31T23:21:26.768-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-10-31T23:21:26.770-03:00  INFO 32680 --- [ApiGateway] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-10-31T23:21:26.771-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1793499686770 with initial instances count: 0
+2026-10-31T23:21:26.773-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application APIGATEWAY with eureka with status UP
+2026-10-31T23:21:26.774-03:00  INFO 32680 --- [ApiGateway] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1793499686774, current=UP, previous=STARTING]
+2026-10-31T23:21:26.775-03:00  INFO 32680 --- [ApiGateway] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/Juninho.mshome.net:ApiGateway:8080: registering service...
+2026-10-31T23:21:26.819-03:00  INFO 32680 --- [ApiGateway] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_APIGATEWAY/Juninho.mshome.net:ApiGateway:8080 - registration status: 204
+2026-10-31T23:21:26.918-03:00  INFO 32680 --- [ApiGateway] [           main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8080 (http)
+2026-10-31T23:21:26.920-03:00  INFO 32680 --- [ApiGateway] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-10-31T23:21:26.934-03:00  INFO 32680 --- [ApiGateway] [           main] u.bcc.ApiGateway.ApiGatewayApplication   : Started ApiGatewayApplication in 4.982 seconds (process running for 5.548)
+2026-10-31T23:21:56.784-03:00  INFO 32680 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-10-31T23:21:56.787-03:00  INFO 32680 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-10-31T23:21:56.788-03:00  INFO 32680 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-10-31T23:21:56.790-03:00  INFO 32680 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-10-31T23:21:56.790-03:00  INFO 32680 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-10-31T23:21:56.791-03:00  INFO 32680 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-10-31T23:21:56.792-03:00  INFO 32680 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-10-31T23:21:56.812-03:00  INFO 32680 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
