@@ -56,3 +56,11 @@
 2026-11-03T08:14:27.400-03:00  INFO 43400 --- [ApiGateway] [           main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8080 (http)
 2026-11-03T08:14:27.408-03:00  INFO 43400 --- [ApiGateway] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
 2026-11-03T08:14:27.446-03:00  INFO 43400 --- [ApiGateway] [           main] u.bcc.ApiGateway.ApiGatewayApplication   : Started ApiGatewayApplication in 10.399 seconds (process running for 11.764)
+2026-11-03T08:14:57.123-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-11-03T08:14:57.125-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-11-03T08:14:57.126-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-11-03T08:14:57.127-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-11-03T08:14:57.128-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-11-03T08:14:57.128-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-11-03T08:14:57.129-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-11-03T08:14:57.180-03:00  INFO 43400 --- [ApiGateway] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200

@@ -301,3 +301,10 @@ Caused by: java.net.ConnectException: Connection refused: getsockopt
 2026-11-03T08:14:33.689-03:00  INFO 32252 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 6
 2026-11-03T08:14:33.690-03:00  INFO 32252 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
 2026-11-03T08:14:33.691-03:00  INFO 32252 --- [ClusterEurekaServer] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-11-03T08:15:33.691-03:00  INFO 32252 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-03T08:16:33.569-03:00  INFO 32252 --- [ClusterEurekaServer] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 (replication=false)
+2026-11-03T08:16:33.706-03:00  INFO 32252 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
+2026-11-03T08:16:34.944-03:00  INFO 32252 --- [ClusterEurekaServer] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-03T08:17:04.355-03:00  INFO 32252 --- [ClusterEurekaServer] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
+2026-11-03T08:17:07.841-03:00  INFO 32252 --- [ClusterEurekaServer] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 (replication=true)
+2026-11-03T08:17:07.938-03:00  INFO 32252 --- [ClusterEurekaServer] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)

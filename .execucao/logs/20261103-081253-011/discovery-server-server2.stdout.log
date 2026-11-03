@@ -94,3 +94,13 @@
 2026-11-03T08:14:34.624-03:00  INFO 21284 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 6
 2026-11-03T08:14:34.625-03:00  INFO 21284 --- [ClusterEurekaServer] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
 2026-11-03T08:14:34.627-03:00  INFO 21284 --- [ClusterEurekaServer] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-11-03T08:15:34.627-03:00  INFO 21284 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-11-03T08:16:33.876-03:00  INFO 21284 --- [ClusterEurekaServer] [nio-8762-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=false)
+2026-11-03T08:16:33.922-03:00  INFO 21284 --- [ClusterEurekaServer] [nio-8762-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=false)
+2026-11-03T08:16:34.093-03:00  INFO 21284 --- [ClusterEurekaServer] [nio-8762-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 (replication=true)
+2026-11-03T08:16:34.638-03:00  INFO 21284 --- [ClusterEurekaServer] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2026-11-03T08:17:03.759-03:00  WARN 21284 --- [ClusterEurekaServer] [nio-8762-exec-9] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: SERVICE-ALPHA - Juninho.mshome.net:service-alpha:8090
+2026-11-03T08:17:03.768-03:00  WARN 21284 --- [ClusterEurekaServer] [nio-8762-exec-9] c.n.eureka.resources.InstanceResource    : Not Found (Renew): SERVICE-ALPHA - Juninho.mshome.net:service-alpha:8090
+2026-11-03T08:17:03.819-03:00  INFO 21284 --- [ClusterEurekaServer] [io-8762-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=false)
+2026-11-03T08:17:07.311-03:00  INFO 21284 --- [ClusterEurekaServer] [nio-8762-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 (replication=false)
+2026-11-03T08:17:07.937-03:00  INFO 21284 --- [ClusterEurekaServer] [nio-8762-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance SERVICE-ALPHA/Juninho.mshome.net:service-alpha:8090 with status UP (replication=true)
