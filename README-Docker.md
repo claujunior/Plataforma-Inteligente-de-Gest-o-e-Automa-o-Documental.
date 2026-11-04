@@ -1,53 +1,46 @@
-# Somente Redis no Docker
+# Redis e PostgreSQL no Docker
 
-O Compose executa apenas Redis. Config Server, os tres Eurekas,
-Service Alpha e API Gateway devem ser executados em Java, pela IDE
-ou pelo script anterior iniciar-tudo.cmd.
+O Compose inicia Redis e PostgreSQL. Config Server, Eureka, Service Alpha e
+API Gateway rodam em Java pela IDE ou pelo iniciar-tudo.cmd.
 
 ## Iniciar
 
-1. Abra o Docker Desktop e aguarde ele iniciar.
-2. Na pasta distribuidos3, execute iniciar-docker.cmd.
-3. Depois, inicie as aplicacoes Java pela IDE ou pelo iniciar-tudo.cmd.
-
-O comando equivalente, dentro da pasta do projeto, e:
+Abra o Docker Desktop e execute iniciar-docker.cmd na pasta do projeto.
+O comando equivalente e:
 
 ```powershell
-docker compose up -d --remove-orphans --wait --wait-timeout 60 redis
+docker compose up -d --wait --wait-timeout 120 redis postgres
 ```
 
-`--remove-orphans` encerra e remove os antigos conteineres Java deste
-projeto Compose, agora ausentes do arquivo. O Redis e seu volume sao mantidos.
+O Redis fica em 127.0.0.1:6379. Para conectar ao PostgreSQL pelo Windows:
 
-O Gateway executado no Windows conecta ao Redis usando:
-
-```yaml
-spring:
-  data:
-    redis:
-      host: localhost
-      port: 6379
+```properties
+spring.datasource.url=jdbc:postgresql://127.0.0.1:5432/distribuidos3
+spring.datasource.username=postgres
+spring.datasource.password=
 ```
 
-Os arquivos de configuracao Java continuam usando os enderecos localhost.
+O PostgreSQL usa autenticacao trust para desenvolvimento local e publica
+a porta somente no endereco de loopback do Windows. O volume postgres-data
+guarda o banco entre reinicios.
 
 ## Conferir
 
 ```powershell
 docker compose ps
 docker compose exec redis redis-cli ping
+docker compose exec postgres psql -h 127.0.0.1 -U postgres -d distribuidos3 -w -c "SELECT current_database();"
 ```
 
-O segundo comando deve responder PONG. O Redis fica disponivel
-somente no computador local, na porta 6379.
+O Redis deve responder PONG. A consulta deve retornar distribuidos3.
 
 ## Parar
 
 Execute parar-docker.cmd ou:
 
 ```powershell
-docker compose stop redis
+docker compose stop redis postgres
 ```
 
-Isso para somente o Redis e preserva seu conteiner e volume.
-Pare as aplicacoes Java separadamente, pela IDE ou pelo parar-tudo.cmd.
+Os volumes redis-data e postgres-data continuam disponiveis para a proxima
+execucao. Pare as aplicacoes Java separadamente.
