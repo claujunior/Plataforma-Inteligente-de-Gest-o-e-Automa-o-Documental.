@@ -1,5 +1,6 @@
 package ufrn.bcc.service_alpha.Exception;
 
+import io.github.resilience4j.circuitbreaker.CallNotPermittedException;
 import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpHeaders;
@@ -30,6 +31,12 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         ProblemDetail problema = ProblemDetail.forStatusAndDetail(status, "Confira os campos informados.");
         problema.setProperty("campos", campos);
         return handleExceptionInternal(excecao, problema, headers, status, request);
+    }
+
+    @ExceptionHandler(CallNotPermittedException.class)
+    public ProblemDetail tratarCircuitoAberto(CallNotPermittedException excecao) {
+        return ProblemDetail.forStatusAndDetail(HttpStatus.SERVICE_UNAVAILABLE,
+                "Servico de funcionarios temporariamente indisponivel. Tente novamente em instantes.");
     }
 
     @ExceptionHandler(DataIntegrityViolationException.class)

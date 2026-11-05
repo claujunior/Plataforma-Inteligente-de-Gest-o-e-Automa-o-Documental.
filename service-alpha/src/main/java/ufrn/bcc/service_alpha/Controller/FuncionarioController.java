@@ -1,5 +1,7 @@
 package ufrn.bcc.service_alpha.Controller;
 
+import io.github.resilience4j.circuitbreaker.CircuitBreaker;
+import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,24 +26,29 @@ import java.util.List;
 public class FuncionarioController {
 
     private final FuncionarioService funcionarioService;
+    private final CircuitBreaker leitura;
+    private final CircuitBreaker escrita;
 
-    public FuncionarioController(FuncionarioService funcionarioService) {
+    public FuncionarioController(FuncionarioService funcionarioService, CircuitBreakerRegistry registry) {
         this.funcionarioService = funcionarioService;
+        this.leitura = registry.circuitBreaker("funcionarios-leitura");
+        this.escrita = registry.circuitBreaker("funcionarios-escrita");
     }
 
     @GetMapping
     public List<Funcionario> listar() {
-        return funcionarioService.listar();
+        return leitura.executeSupplier(funcionarioService::listar);
     }
 
     @GetMapping("/{cpf}")
     public Funcionario buscar(@PathVariable String cpf) {
-        return funcionarioService.buscar(cpf);
+        return leitura.executeSupplier(() -> funcionarioService.buscar(cpf));
     }
 
     @PostMapping
     public ResponseEntity<String> cadastrar(@Valid @RequestBody CadastrarFuncionarioRequest request) {
-        funcionarioService.cadastrar(request);
+        // O circuito envolve o service transacional para observar tambem falhas no commit.
+        escrita.executeSupplier(() -> funcionarioService.cadastrar(request));
         return ResponseEntity.status(HttpStatus.CREATED).body("Funcionário cadastrado com sucesso.");
     }
 
@@ -49,12 +56,12 @@ public class FuncionarioController {
     public Funcionario atualizar(
             @PathVariable String cpf,
             @Valid @RequestBody AtualizarFuncionarioRequest request) {
-        return funcionarioService.atualizar(cpf, request);
+        return escrita.executeSupplier(() -> funcionarioService.atualizar(cpf, request));
     }
 
     @DeleteMapping("/{cpf}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void excluir(@PathVariable String cpf) {
-        funcionarioService.excluir(cpf);
+        escrita.executeRunnable(() -> funcionarioService.excluir(cpf));
     }
 }
