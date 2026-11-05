@@ -1,0 +1,24 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  scrape_timeout: 5s
+
+scrape_configs:
+  - job_name: "EurekaServer"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: ["discovery-1:8761", "discovery-2:8762", "discovery-3:8763"]
+
+  - job_name: "APIGateway"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: ["api-gateway:8080"]
+
+  - job_name: "AlphaService"
+    metrics_path: "/actuator/prometheus"
+    static_configs:
+      - targets: ["service-alpha:8090"]
+
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]

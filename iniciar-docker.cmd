@@ -1,6 +1,6 @@
 @echo off
 setlocal
-title Iniciar Redis e PostgreSQL no Docker
+title Iniciar projeto com Docker Compose
 set "servicos_docker_exe=docker"
 where docker >nul 2>&1
 if errorlevel 1 (
@@ -9,7 +9,7 @@ if errorlevel 1 (
     ) else if exist "%ProgramFiles%\Docker\Docker\resources\bin\docker.exe" (
         set "servicos_docker_exe=%ProgramFiles%\Docker\Docker\resources\bin\docker.exe"
     ) else (
-        echo O Docker Desktop nao foi encontrado.
+        echo Docker nao encontrado. Instale ou abra o Docker Desktop.
         pause
         exit /b 1
     )
@@ -20,19 +20,30 @@ if errorlevel 1 (
     pause
     exit /b 1
 )
-echo Iniciando Redis e PostgreSQL...
-"%servicos_docker_exe%" compose --project-directory "%~dp0." -f "%~dp0compose.yaml" up -d --wait --wait-timeout 120 redis postgres
-set "servicos_resultado=%errorlevel%"
-if not "%servicos_resultado%"=="0" (
-    echo.
-    echo Falha ao iniciar Redis e PostgreSQL. Confira os logs:
-    "%servicos_docker_exe%" compose --project-directory "%~dp0." -f "%~dp0compose.yaml" logs --tail 30 redis postgres
-) else (
-    echo.
-    echo Redis pronto em localhost:6379.
-    echo PostgreSQL pronto em 127.0.0.1:5432. Banco: distribuidos3. Usuario: postgres.
-    echo Inicie Config Server, Eureka, Alpha e Gateway pela IDE ou pelo iniciar-tudo.cmd.
-)
+"%servicos_docker_exe%" compose --project-directory "%~dp0." -f "%~dp0compose.yaml" config --quiet
+if errorlevel 1 goto falha
+
+echo Construindo as quatro imagens Java...
+"%servicos_docker_exe%" compose --project-directory "%~dp0." -f "%~dp0compose.yaml" build config-server discovery-1 service-alpha api-gateway
+if errorlevel 1 goto falha
+
+echo Iniciando os servicos na ordem de dependencias e aguardando a saude...
+"%servicos_docker_exe%" compose --project-directory "%~dp0." -f "%~dp0compose.yaml" up -d --no-build --wait --wait-timeout 600
+if errorlevel 1 goto falha
+
 echo.
+echo Gateway: http://127.0.0.1:30080/service-alpha/teste
+echo Eureka: http://127.0.0.1:30761
+echo Prometheus: http://127.0.0.1:30900/targets
+echo Os dados do Compose foram preservados. Os dados do Kubernetes sao separados.
 pause
-exit /b %servicos_resultado%
+exit /b 0
+
+:falha
+echo.
+echo Falha ao construir ou iniciar o projeto. Etapas dependentes nao serao iniciadas.
+echo Consulte: docker compose ps -a
+echo Consulte: docker compose logs --tail 80
+echo Nenhum volume foi excluido.
+pause
+exit /b 1

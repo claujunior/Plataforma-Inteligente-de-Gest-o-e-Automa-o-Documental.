@@ -1,9 +1,129 @@
 name: distribuidos3
 
+x-java-client: &java-client
+  restart: unless-stopped
+  mem_limit: 768m
+  cpus: 1.0
+  stop_grace_period: 40s
+  configs:
+    - source: client-bootstrap
+      target: /config/application.properties
+
+x-discovery-ready: &discovery-ready
+  discovery-1:
+    condition: service_healthy
+  discovery-2:
+    condition: service_healthy
+  discovery-3:
+    condition: service_healthy
+
 services:
+  config-server:
+    build: ./config-server
+    image: distribuidos3-config:compose
+    restart: unless-stopped
+    mem_limit: 768m
+    cpus: 1.0
+    stop_grace_period: 40s
+    ports:
+      - "127.0.0.1:8888:8888"
+    environment:
+      SERVER_PORT: "8888"
+      MANAGEMENT_ENDPOINT_HEALTH_PROBES_ENABLED: "true"
+      MANAGEMENT_ENDPOINT_HEALTH_GROUP_READINESS_INCLUDE: "readinessState,configServer"
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: health
+      SPRING_APPLICATION_JSON: '{"spring.cloud.config.server.health.repositories.alpha.name":"service-alpha"}'
+      JAVA_TOOL_OPTIONS: "-XX:MaxRAMPercentage=65.0"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "--show-error", "--max-time", "4", "http://127.0.0.1:8888/actuator/health/readiness"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  discovery-1:
+    <<: *java-client
+    build: ./discovery-server
+    image: distribuidos3-discovery:compose
+    hostname: discovery-1
+    mem_limit: 512m
+    depends_on:
+      config-server:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:30761:8761"
+    environment:
+      APPLICATION_NAME: ClusterEurekaServer
+      SPRING_CONFIG_LOCATION: file:/config/application.properties
+      SPRING_APPLICATION_JSON: '{"spring.profiles.active":"server1","server.port":8761,"eureka.instance.hostname":"discovery-1","eureka.instance.prefer-ip-address":false,"eureka.instance.instance-id":"discovery-1:8761","eureka.client.serviceUrl.defaultZone":"http://discovery-2:8762/eureka/,http://discovery-3:8763/eureka/","eureka.server.my-url":"http://discovery-1:8761/eureka/"}'
+      MANAGEMENT_ENDPOINT_HEALTH_PROBES_ENABLED: "true"
+      MANAGEMENT_ENDPOINT_HEALTH_GROUP_READINESS_INCLUDE: "readinessState"
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "health,prometheus"
+      MANAGEMENT_METRICS_TAGS_APPLICATION: ClusterEurekaServer
+      JAVA_TOOL_OPTIONS: "-XX:MaxRAMPercentage=65.0"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "--show-error", "--max-time", "4", "http://127.0.0.1:8761/actuator/health/readiness"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  discovery-2:
+    <<: *java-client
+    pull_policy: never
+    image: distribuidos3-discovery:compose
+    hostname: discovery-2
+    mem_limit: 512m
+    depends_on:
+      config-server:
+        condition: service_healthy
+    environment:
+      APPLICATION_NAME: ClusterEurekaServer
+      SPRING_CONFIG_LOCATION: file:/config/application.properties
+      SPRING_APPLICATION_JSON: '{"spring.profiles.active":"server2","server.port":8762,"eureka.instance.hostname":"discovery-2","eureka.instance.prefer-ip-address":false,"eureka.instance.instance-id":"discovery-2:8762","eureka.client.serviceUrl.defaultZone":"http://discovery-1:8761/eureka/,http://discovery-3:8763/eureka/","eureka.server.my-url":"http://discovery-2:8762/eureka/"}'
+      MANAGEMENT_ENDPOINT_HEALTH_PROBES_ENABLED: "true"
+      MANAGEMENT_ENDPOINT_HEALTH_GROUP_READINESS_INCLUDE: "readinessState"
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "health,prometheus"
+      MANAGEMENT_METRICS_TAGS_APPLICATION: ClusterEurekaServer
+      JAVA_TOOL_OPTIONS: "-XX:MaxRAMPercentage=65.0"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "--show-error", "--max-time", "4", "http://127.0.0.1:8762/actuator/health/readiness"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  discovery-3:
+    <<: *java-client
+    pull_policy: never
+    image: distribuidos3-discovery:compose
+    hostname: discovery-3
+    mem_limit: 512m
+    depends_on:
+      config-server:
+        condition: service_healthy
+    environment:
+      APPLICATION_NAME: ClusterEurekaServer
+      SPRING_CONFIG_LOCATION: file:/config/application.properties
+      SPRING_APPLICATION_JSON: '{"spring.profiles.active":"server3","server.port":8763,"eureka.instance.hostname":"discovery-3","eureka.instance.prefer-ip-address":false,"eureka.instance.instance-id":"discovery-3:8763","eureka.client.serviceUrl.defaultZone":"http://discovery-1:8761/eureka/,http://discovery-2:8762/eureka/","eureka.server.my-url":"http://discovery-3:8763/eureka/"}'
+      MANAGEMENT_ENDPOINT_HEALTH_PROBES_ENABLED: "true"
+      MANAGEMENT_ENDPOINT_HEALTH_GROUP_READINESS_INCLUDE: "readinessState"
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "health,prometheus"
+      MANAGEMENT_METRICS_TAGS_APPLICATION: ClusterEurekaServer
+      JAVA_TOOL_OPTIONS: "-XX:MaxRAMPercentage=65.0"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "--show-error", "--max-time", "4", "http://127.0.0.1:8763/actuator/health/readiness"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
   redis:
     image: redis:8-alpine
     restart: unless-stopped
+    mem_limit: 128m
+    cpus: 0.5
+    depends_on: *discovery-ready
     ports:
       - "127.0.0.1:6379:6379"
     volumes:
@@ -18,9 +138,13 @@ services:
   postgres:
     image: postgres:17-alpine
     restart: unless-stopped
+    mem_limit: 512m
+    cpus: 1.0
+    depends_on: *discovery-ready
     environment:
       POSTGRES_DB: distribuidos3
       POSTGRES_USER: postgres
+      # Somente para desenvolvimento local. Nao usar trust em uma VPS.
       POSTGRES_HOST_AUTH_METHOD: trust
     ports:
       - "127.0.0.1:5432:5432"
@@ -33,6 +157,93 @@ services:
       retries: 10
       start_period: 10s
 
+  service-alpha:
+    <<: *java-client
+    build: ./service-alpha
+    image: distribuidos3-alpha:compose
+    depends_on:
+      <<: *discovery-ready
+      config-server:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    environment:
+      APPLICATION_NAME: service-alpha
+      SPRING_CONFIG_LOCATION: file:/config/application.properties
+      SPRING_APPLICATION_JSON: '{"server.port":8090,"eureka.client.serviceUrl.defaultZone":"http://discovery-1:8761/eureka/,http://discovery-2:8762/eureka/,http://discovery-3:8763/eureka/","eureka.instance.hostname":"service-alpha","eureka.instance.prefer-ip-address":false,"eureka.instance.instance-id":"service-alpha:8090","spring.datasource.url":"jdbc:postgresql://postgres:5432/distribuidos3","spring.datasource.username":"postgres","spring.datasource.password":""}'
+      MANAGEMENT_ENDPOINT_HEALTH_PROBES_ENABLED: "true"
+      MANAGEMENT_ENDPOINT_HEALTH_GROUP_READINESS_INCLUDE: "readinessState,db"
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "health,refresh,prometheus"
+      MANAGEMENT_METRICS_TAGS_APPLICATION: service-alpha
+      JAVA_TOOL_OPTIONS: "-XX:MaxRAMPercentage=65.0"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "--show-error", "--max-time", "4", "http://127.0.0.1:8090/actuator/health/readiness"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  api-gateway:
+    <<: *java-client
+    build: ./ApiGateway
+    image: distribuidos3-gateway:compose
+    depends_on:
+      service-alpha:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:30080:8080"
+    environment:
+      APPLICATION_NAME: ApiGateway
+      SPRING_CONFIG_LOCATION: file:/config/application.properties
+      SPRING_APPLICATION_JSON: '{"server.port":8080,"eureka.client.serviceUrl.defaultZone":"http://discovery-1:8761/eureka/,http://discovery-2:8762/eureka/,http://discovery-3:8763/eureka/","eureka.instance.hostname":"api-gateway","eureka.instance.prefer-ip-address":false,"eureka.instance.instance-id":"ApiGateway:8080","spring.data.redis.host":"redis","spring.data.redis.port":6379}'
+      MANAGEMENT_ENDPOINT_HEALTH_PROBES_ENABLED: "true"
+      MANAGEMENT_ENDPOINT_HEALTH_GROUP_READINESS_INCLUDE: "readinessState,redis"
+      MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "health,prometheus"
+      MANAGEMENT_METRICS_TAGS_APPLICATION: ApiGateway
+      JAVA_TOOL_OPTIONS: "-XX:MaxRAMPercentage=65.0"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "--silent", "--show-error", "--max-time", "4", "http://127.0.0.1:8080/actuator/health/readiness"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 30s
+
+  prometheus:
+    image: prom/prometheus:v3.15.1
+    restart: unless-stopped
+    mem_limit: 512m
+    cpus: 1.0
+    depends_on:
+      api-gateway:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:30900:9090"
+    configs:
+      - source: prometheus-config
+        target: /etc/prometheus/prometheus.yml
+    volumes:
+      - prometheus-data:/prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --storage.tsdb.retention.time=7d
+      - --storage.tsdb.retention.size=4GB
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:9090/-/ready"]
+      interval: 10s
+      timeout: 5s
+      retries: 15
+      start_period: 15s
+
+configs:
+  client-bootstrap:
+    file: ./docker/application-container.properties
+  prometheus-config:
+    file: ./docker/prometheus.yml
+
 volumes:
   redis-data:
   postgres-data:
+  prometheus-data:
