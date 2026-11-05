@@ -28,7 +28,7 @@ public class Funcionario {
     @Column(nullable = false, length = 150)
     private String nome;
 
-    @Column(nullable = true, length = 20)
+    @Column(name = "numero_telefone",nullable = true, length = 20)
     private String numeroTelefone;
 
     @Column(nullable = true, length = 254)
