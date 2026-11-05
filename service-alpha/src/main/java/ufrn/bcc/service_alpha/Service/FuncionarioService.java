@@ -1,6 +1,7 @@
 package ufrn.bcc.service_alpha.Service;
 
 
+import jakarta.persistence.EntityManager;
 import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -18,9 +19,11 @@ import java.util.List;
 public class FuncionarioService {
 
     private final FuncionarioRepository funcionarioRepository;
+    private final EntityManager entityManager;
 
-    public FuncionarioService(FuncionarioRepository funcionarioRepository) {
+    public FuncionarioService(FuncionarioRepository funcionarioRepository, EntityManager entityManager) {
         this.funcionarioRepository = funcionarioRepository;
+        this.entityManager = entityManager;
     }
 
     public List<Funcionario> listar() {
@@ -38,7 +41,7 @@ public class FuncionarioService {
         Funcionario funcionario = new Funcionario(
                 request.cpf(), request.nome(), request.numeroTelefone(),
                 request.email(), request.salario());
-        funcionarioRepository.save(funcionario);
+        entityManager.persist(funcionario);
         return funcionario;
     }
 

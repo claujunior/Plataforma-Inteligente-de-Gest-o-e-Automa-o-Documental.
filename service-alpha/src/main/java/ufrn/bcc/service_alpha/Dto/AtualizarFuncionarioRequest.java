@@ -11,9 +11,24 @@ import jakarta.validation.constraints.Size;
 import java.math.BigDecimal;
 
 public record AtualizarFuncionarioRequest(
-        @NotBlank @Size(max = 150) String nome,
-        @NotNull @PositiveOrZero @Digits(integer = 10, fraction = 2) BigDecimal salario,
-        @Pattern(regexp = "\\+?[0-9]{10,15}", message = "Informe de 10 a 15 dígitos, com + opcional.") String numeroTelefone,
-        @Email @Size(min = 1, max = 254) String email
-) {
-}
+
+        @NotBlank
+        @Size(max = 150)
+        String nome,
+
+        @NotNull
+        @PositiveOrZero
+        @Digits(integer = 10, fraction = 2)
+        BigDecimal salario,
+
+        @Pattern(
+                regexp = "\\+?[0-9]{10,15}",
+                message = "Informe de 10 a 15 dígitos, com + opcional."
+        )
+        String numeroTelefone,
+
+        @Email
+        @Size(min = 1, max = 254)
+        String email
+
+) {}

@@ -1,5 +1,6 @@
 package ufrn.bcc.service_alpha.Service;
 
+import jakarta.persistence.EntityManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.Sort;
@@ -18,6 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 
 class FuncionarioServiceTest {
@@ -25,12 +27,14 @@ class FuncionarioServiceTest {
     private static final String CPF = "52998224725";
 
     private FuncionarioRepository repository;
+    private EntityManager entityManager;
     private FuncionarioService service;
 
     @BeforeEach
     void preparar() {
         repository = mock(FuncionarioRepository.class);
-        service = new FuncionarioService(repository);
+        entityManager = mock(EntityManager.class);
+        service = new FuncionarioService(repository, entityManager);
     }
 
     @Test
@@ -65,7 +69,8 @@ class FuncionarioServiceTest {
 
         var resultado = service.cadastrar(request);
 
-        verify(repository).save(resultado);
+        verify(entityManager).persist(resultado);
+        verifyNoInteractions(repository);
         assertThat(resultado.getCpf()).isEqualTo(request.cpf());
         assertThat(resultado.getNome()).isEqualTo(request.nome());
         assertThat(resultado.getSalario()).isEqualByComparingTo(request.salario());
